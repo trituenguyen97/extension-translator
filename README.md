@@ -5,7 +5,7 @@
 
 [![Browser Support](https://img.shields.io/badge/Browsers-Google%20Chrome%20%7C%20Microsoft%20Edge-4285F4.svg?logo=googlechrome)](README.md)
 [![Deployment](https://img.shields.io/badge/Fleet%20Deploy-GPO%20%7C%20Intune%20%7C%20Registry-0078D6.svg?logo=windows)](docs/)
-[![AI Engine](https://img.shields.io/badge/Engine-Google%20Gemini%20Live-4285F4.svg?logo=google)](https://ai.google.dev/)
+[![AI Engine](https://img.shields.io/badge/Engine-Real--Time%20Multimodal%20Voice%20Stream-4285F4.svg)](README.md)
 [![Security](https://img.shields.io/badge/Security-BYOK%20%7C%20Zero%20Data%20Retention-success.svg)](README.md)
 [![Extension ID](https://img.shields.io/badge/Extension%20ID-anflamknalpoacapofekflmndbkblkjl-purple.svg)](https://github.com/trituenguyen97/extension-translator/releases/tag/dist)
 
@@ -18,7 +18,7 @@ Enterprise adoption of real-time meeting translation faces major friction from I
 2. **IT Fleet Deployment Overhead:** Distributing custom internal tools to thousands of employee machines usually requires manual side-loading, developer mode warnings, or cumbersome manual installs.
 3. **Multi-Meeting Fragmentation:** Employees switch constantly between Google Meet, Microsoft Teams Web, Zoom Web, and Slack Huddles, requiring a universal, non-intrusive side-panel translation experience.
 
-**Enterprise Meeting Caption Translator** provides an **enterprise-ready browser extension distribution portal** designed for automated fleet deployment via Windows Group Policy (GPO) and Microsoft Intune. Featuring a dedicated browser Side Panel, it streams tab loopback or microphone audio directly to Google Gemini Live for sub-second speech-to-speech translation, realtime transcriptions, and rolling meeting minutes—operating under a strict **Bring-Your-Own-Key (BYOK) zero-data-retention security architecture**.
+**Enterprise Meeting Caption Translator** provides an **enterprise-ready browser extension distribution portal** designed for automated fleet deployment via Windows Group Policy (GPO) and Microsoft Intune. Featuring a dedicated browser Side Panel, it streams tab loopback or microphone audio directly to real-time multimodal voice streaming endpoints for sub-second speech-to-speech translation, realtime transcriptions, and rolling meeting minutes—operating under a strict **Bring-Your-Own-Key (BYOK) zero-data-retention security architecture**.
 
 ```
        ┌────────────────────────────────────────────────────────┐
@@ -34,12 +34,12 @@ Enterprise adoption of real-time meeting translation faces major friction from I
        │                                                        │
        │   Google Meet • MS Teams Web • Zoom • Slack Huddles    │
        │   • Capture: Tab Audio Loopback OR Local Microphone    │
-       │   • Security: Employee-owned Gemini API Key (BYOK)     │
+       │   • Security: Employee-owned AI API Key (BYOK)         │
        └───────────────────────────┬────────────────────────────┘
                                    │ Direct Secure TLS Stream
                                    ▼
        ┌────────────────────────────────────────────────────────┐
-       │             Google Gemini Live Cloud Engine            │
+       │             Real-Time Multimodal AI Voice Engine       │
        │   • Streaming Speech Recognition (STT)                 │
        │   • Real-Time Multilingual Translation                 │
        │   • Studio Voice Synthesis (Gapless TTS)               │
@@ -52,15 +52,15 @@ Enterprise adoption of real-time meeting translation faces major friction from I
 ## 🚀 Key Features & Enterprise Capabilities
 
 ### 1. Zero-Trust Security & Sovereign BYOK Architecture
-- **Bring Your Own Key (BYOK):** Every user configures their personal or corporate Google AI Studio API key. The extension binary contains zero baked-in API credentials, eliminating credential leakage risks.
-- **Zero Intermediary Servers:** Audio streams and translated text flow directly between the user's browser client and Google's encrypted API endpoints via TLS. No developer proxy or centralized telemetry server ever intercepts meeting discussions.
+- **Bring Your Own Key (BYOK):** Every user configures their personal or corporate AI API access key (`AI_API`). The extension binary contains zero baked-in API credentials, eliminating credential leakage risks.
+- **Zero Intermediary Servers:** Audio streams and translated text flow directly between the user's browser client and the encrypted AI endpoints via TLS. No developer proxy or centralized telemetry server ever intercepts meeting discussions.
 
 ### 2. Universal Meeting Side-Panel Integration
 - Runs natively within the browser's persistent **Side Panel** without obscuring video feeds or presentation decks.
 - Compatible across all browser-based conferencing platforms: **Google Meet**, **Microsoft Teams Web**, **Zoom Web**, **Cisco Webex**, and **Slack Huddles**.
 - Flexible input routing: switch dynamically between **Tab Audio Loopback** (hearing remote attendees), **System Microphone** (local speaker), or **Dual Ingestion**.
 
-### 3. Gemini Live Multimodal Full-Duplex Pipeline
+### 3. Full-Duplex Multimodal Pipeline
 - **Real-Time Streaming Translation:** Sub-second speech recognition and translation across Japanese, Vietnamese, English, Korean, and Chinese.
 - **Auditory Feedback (TTS):** Streams studio-quality synthesized speech directly through browser audio nodes.
 - **Autonomous Meeting Summarization:** Automatically distills lengthy discussions into structured Markdown executive minutes, decision logs, and follow-up action items.
@@ -93,7 +93,7 @@ Endpoints automatically check `update.xml` and auto-update whenever a new CRX ve
 
 1. Open Microsoft Edge or Google Chrome.
 2. Click the **Caption Translator** icon in the browser toolbar to open the **Side Panel**.
-3. Click the ⚙️ **Settings** tab and paste your **Gemini API Key** (generate from [Google AI Studio](https://aistudio.google.com/apikey)).
+3. Click the ⚙️ **Settings** tab and paste your **AI_API key**.
 4. Select your audio source (🎤 Microphone or 🔊 Meeting Tab Audio) and select your target translation language.
 5. Click **Start Session**. Real-time subtitles and streaming voice translation begin immediately.
 
@@ -123,15 +123,15 @@ Enterprise Meeting Caption Translator provides the missing enterprise delivery v
                    └──────────────────┴────────────────────┘
 ```
 
-1. **Enterprise Identity & Token Quota Gateway (40%):** Building an optional corporate proxy gateway allowing IT departments to centrally manage departmental Gemini quota pools without exposing individual API keys to end users.
+1. **Enterprise Identity & Token Quota Gateway (40%):** Building an optional corporate proxy gateway allowing IT departments to centrally manage departmental AI API quota pools without exposing individual keys to end users.
 2. **Official Web Store Enterprise Auditing (25%):** Completing formal Chrome Web Store enterprise developer certification and CASA (Cloud Application Security Assessment) tier checks.
 3. **Enterprise SOC2 & Data Residency Compliance (20%):** Formal third-party penetration testing and cryptographic verification of zero-retention policies.
 4. **Safari & Firefox WebExtension Compatibility (15%):** Porting the Side Panel architecture to Safari (macOS/iPadOS) and Firefox ESR.
 
 ### Grant Fit
-- **Google Cloud for Startups Program** (Showcasing Gemini Live WebExtensions)
 - **Enterprise Productivity & Future-of-Work Grants**
-- **Open Source Security & Zero-Trust Technology Initiatives**
+- **Sovereign Cloud & Zero-Trust Technology Initiatives**
+- **AI Accessibility & Cross-Border Communication Funds**
 
 ---
 
